@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">My Chat</string>
+    <string name="message1">Hi Leo, Whats up ??\nI need a new logo for group</string>
+    <string name="time1">22:30</string>
+    <string name="message2">Simple , minimal and beauti..</string>
+    <string name="time2">22:31</string>
+    <string name="message3">Ok, I\'ll start next week.\nSend me documents today.</string>
+    <string name="time3">22:32</string>
+    <string name="message4">Oh. That\'s great 😘</string>
+    <string name="time4">22:33</string>
 </resources>

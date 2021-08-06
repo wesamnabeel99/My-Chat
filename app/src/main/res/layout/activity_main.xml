@@ -4,7 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="@dimen/marginBig"
+
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/message1View"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@color/sentMessage"
+        android:padding="@dimen/paddingNormal"
+        android:text="@string/message1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <TextView
+        android:id="@+id/time1View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time1"
+        app:layout_constraintEnd_toEndOf="@+id/message1View"
+        app:layout_constraintTop_toBottomOf="@+id/message1View" />
+
+    <TextView
+        android:id="@+id/message2View"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@color/sentMessage"
+        android:padding="@dimen/paddingNormal"
+        android:text="@string/message2"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@id/message1View"
+        app:layout_constraintTop_toBottomOf="@+id/time1View" />
+
+    <TextView
+        android:id="@+id/time2View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time2"
+        app:layout_constraintEnd_toEndOf="@+id/message2View"
+        app:layout_constraintTop_toBottomOf="@+id/message2View" />
+
+    <TextView
+        android:id="@+id/message3View"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@color/recivedMessage"
+        android:padding="@dimen/paddingNormal"
+        android:text="@string/message3"
+        android:textColor="@color/text"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time2View" />
+
+    <TextView
+        android:id="@+id/time3View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time3"
+        app:layout_constraintStart_toStartOf="@+id/message3View"
+        app:layout_constraintTop_toBottomOf="@+id/message3View" />
+
+    <TextView
+        android:id="@+id/message4View"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@color/sentMessage"
+        android:padding="@dimen/paddingNormal"
+        android:text="@string/message4"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/time4View"
+        app:layout_constraintTop_toBottomOf="@+id/time3View" />
+
+    <TextView
+        android:id="@+id/time4View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time4"
+        app:layout_constraintEnd_toEndOf="@+id/message2View"
+        app:layout_constraintTop_toBottomOf="@+id/message4View" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/editTextBackground"
+        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
