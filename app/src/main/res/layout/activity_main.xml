@@ -5,21 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="@dimen/marginBig"
-
     tools:context=".MainActivity">
+
     <TextView
         android:id="@+id/message1View"
-        android:layout_width="240dp"
-        android:layout_height="wrap_content"
+        style="@style/message"
         android:background="@drawable/bubbleshape"
-        android:padding="@dimen/paddingNormal"
-        android:text="@string/message1"
         android:textColor="@color/white"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
         android:ellipsize="end"
         android:lines="2"
-        />
+        android:text="@string/message1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="-24dp" />
 
     <ImageView
         android:layout_width="16dp"
@@ -40,13 +38,10 @@
 
     <TextView
         android:id="@+id/message2View"
-        android:layout_width="240dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bubbleshape"
-        android:padding="@dimen/paddingNormal"
         android:text="@string/message2"
+        style="@style/message"
+        android:background="@drawable/bubbleshape"
         android:textColor="@color/white"
-        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/time1View"
         android:ellipsize="end"
@@ -71,13 +66,10 @@
 
     <TextView
         android:id="@+id/message3View"
-        android:layout_width="240dp"
-        android:layout_height="wrap_content"
         android:background="@drawable/bubbleshaperecived"
-        android:padding="@dimen/paddingNormal"
         android:text="@string/message3"
         android:textColor="@color/text"
-        android:textSize="14sp"
+        style="@style/message"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/time2View"
         android:ellipsize="end"
@@ -94,13 +86,11 @@
 
     <TextView
         android:id="@+id/message4View"
-        android:layout_width="240dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bubbleshape"
-        android:padding="@dimen/paddingNormal"
         android:text="@string/message4"
+        style="@style/message"
+        android:background="@drawable/bubbleshape"
         android:textColor="@color/white"
-        android:textSize="14sp"        app:layout_constraintEnd_toEndOf="@+id/time4View"
+        app:layout_constraintEnd_toEndOf="@+id/time4View"
         app:layout_constraintTop_toBottomOf="@+id/time3View" />
 
     <TextView
@@ -121,42 +111,36 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
+        style="@style/editTextStyle"
         android:background="@drawable/bubbleshapeedittext"
         app:layout_constraintBottom_toBottomOf="parent" />
 
     <ImageView
-        android:layout_width="32dp"
-        android:layout_height="32dp"
         android:src="@drawable/ic_baseline_sticky_note_2_24"
+        style="@style/imageViewStyle"
+        app:tint="@color/iconColor"
         app:layout_constraintBottom_toBottomOf="@+id/editText"
         app:layout_constraintStart_toStartOf="@+id/editText"
         app:layout_constraintTop_toTopOf="@+id/editText"
-        android:layout_margin="@dimen/marginSmall"
-        app:tint="@color/iconColor"
-        android:clickable="true"/>
+      />
 
     <ImageView
         android:id="@+id/imageButton"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_margin="@dimen/marginSmall"
+        style="@style/imageViewStyle"
+        app:tint="@color/iconColor"
         android:src="@drawable/ic_baseline_mic_24"
         app:layout_constraintBottom_toBottomOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="@+id/editText"
         app:layout_constraintTop_toTopOf="@+id/editText"
-        app:tint="@color/iconColor"
-        android:clickable="true"/>
+        />
 
     <ImageView
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_margin="@dimen/marginSmall"
         android:src="@drawable/ic_baseline_attach_file_24"
+        style="@style/imageViewStyle"
+        app:tint="@color/iconColor"
         app:layout_constraintBottom_toBottomOf="@+id/editText"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
         app:layout_constraintTop_toTopOf="@+id/editText"
-        app:tint="@color/iconColor"
-        android:clickable="true"/>
+
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

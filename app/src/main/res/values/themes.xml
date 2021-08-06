@@ -4,6 +4,23 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/white</item>
     </style>
+    <style name="message">
+        <item name="android:layout_width">240dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/paddingNormal</item>
+        <item name="android:textSize">14sp</item>
 
+    </style>
 
+    <style name="editTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="background">@drawable/bubbleshapeedittext</item>
+    </style>
+<style name="imageViewStyle">
+    <item name="android:layout_width">@dimen/squareNormal</item>
+    <item name="android:layout_height">@dimen/squareNormal</item>
+    <item name="android:layout_margin">@dimen/marginSmall</item>
+    <item name="android:clickable">true</item>
+</style>
 </resources>
