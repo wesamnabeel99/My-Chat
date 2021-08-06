@@ -20,12 +20,12 @@
         tools:layout_editor_absoluteY="-24dp" />
 
     <ImageView
-        android:layout_width="16dp"
-        android:layout_height="16dp"
+        android:layout_width="@dimen/iconSmall"
+        android:layout_height="@dimen/iconSmall"
         android:src="@drawable/ic_baseline_reply_24"
         app:layout_constraintBottom_toBottomOf="@+id/message1View"
         app:layout_constraintEnd_toEndOf="@+id/message1View"
-        android:layout_margin="8dp"/>
+        android:layout_margin="@dimen/marginSmall"/>
 
     <TextView
         android:id="@+id/time1View"
@@ -48,12 +48,12 @@
         android:lines="1"
         />
     <ImageView
-        android:layout_width="16dp"
-        android:layout_height="16dp"
+        android:layout_width="@dimen/iconSmall"
+        android:layout_height="@dimen/iconSmall"
         android:src="@drawable/ic_baseline_reply_24"
         app:layout_constraintBottom_toBottomOf="@+id/message2View"
         app:layout_constraintEnd_toEndOf="@+id/message2View"
-        android:layout_margin="8dp"/>
+        android:layout_margin="@dimen/marginSmall"/>
 
     <TextView
         android:id="@+id/time2View"
@@ -102,18 +102,20 @@
         app:layout_constraintTop_toBottomOf="@+id/message4View"
         android:textSize="@dimen/textSmall"/>
     <ImageView
-        android:layout_width="16dp"
-        android:layout_height="16dp"
+        android:layout_width="@dimen/iconSmall"
+        android:layout_height="@dimen/iconSmall"
         android:src="@drawable/ic_baseline_reply_24"
         app:layout_constraintBottom_toBottomOf="@+id/message4View"
         app:layout_constraintEnd_toEndOf="@+id/message4View"
-        android:layout_margin="8dp"/>
+        android:layout_margin="@dimen/marginSmall"/>
 
     <EditText
         android:id="@+id/editText"
         style="@style/editTextStyle"
         android:background="@drawable/bubbleshapeedittext"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:src="@drawable/ic_baseline_sticky_note_2_24"

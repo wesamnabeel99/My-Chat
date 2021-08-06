@@ -5,4 +5,5 @@
     <dimen name="marginSmall">8dp</dimen>
     <dimen name="textSmall">12sp</dimen>
     <dimen name="squareNormal">32dp</dimen>
+    <dimen name="iconSmall">16dp</dimen>
 </resources>
